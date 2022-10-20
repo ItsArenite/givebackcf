@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +7,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #eee2dc;
+    font-family: 'Ubuntu', sans-serif;
+    color: #123c69;
 }
 
 .navbar {
@@ -12,8 +17,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #eee2dc;
+    color: #ac3b61;
 }
 
 .brand-title {
@@ -38,12 +43,12 @@ body {
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #ac3b61;
     padding: 1rem;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #d1c6c0;
 }
 
 .toggle-button {
@@ -60,9 +65,54 @@ body {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: #c96d99;
     border-radius: 10px;
 }
+
+.red {
+    color: #c96d99;
+}
+
+.buttoncon {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.apple {
+    display: block;
+    margin-top: 5%;
+    /* margin-bottom: 20%; */
+    background-color: #ffedf6;
+    width: 300px;
+    height: 400px;
+    border: none;
+    border-radius: 10%;
+    transition: transform .5s;
+    margin-left: 20px;
+
+
+}
+
+.apple:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 @media (max-width: 570px) {
     .navbar {
@@ -95,4 +145,6 @@ body {
     .navbar-links.active {
         display: flex;
     }
+
+
 }
